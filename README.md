@@ -18,7 +18,7 @@ Clone the TensorFlow examples GitHub repository to your computer to get the demo
 application.
 
 ```
-git clone https://github.com/tensorflow/examples
+git clone https://github.com/sonalgarg2806/Faceapp.git
 ```
 
 ### Step 2. Import the sample app to Android Studio
