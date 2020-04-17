@@ -25,8 +25,7 @@ git clone https://github.com/tensorflow/examples
 
 Open the TensorFlow source code in Android Studio. To do this, open Android
 Studio and select `Import Projects (Gradle, Eclipse ADT, etc.)`, setting the
-folder to `examples/lite/examples/style_transfer/android`
-
+folder to Faceapp.
 ### Step 3. Run the Android app
 
 Connect the Android device to the computer and be sure to approve any ADB
