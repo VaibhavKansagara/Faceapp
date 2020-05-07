@@ -1,7 +1,7 @@
-#Fri Apr 17 19:08:02 IST 2020
-base.0=/home/sonal/AndroidStudioProjects/examples/lite/examples/style_transfer/android/app/build/intermediates/dex/debug/mergeExtDexDebug/out/classes.dex
+#Thu May 07 18:25:32 IST 2020
+base.0=/home/vaibhav/Desktop/Faceapp/app/build/intermediates/dex/debug/mergeExtDexDebug/out/classes.dex
 path.1=classes.dex
 renamed.1=classes2.dex
 path.0=classes.dex
 renamed.0=classes.dex
-base.1=/home/sonal/AndroidStudioProjects/examples/lite/examples/style_transfer/android/app/build/intermediates/dex/debug/mergeProjectDexDebug/out/classes.dex
+base.1=/home/vaibhav/Desktop/Faceapp/app/build/intermediates/dex/debug/mergeProjectDexDebug/out/classes.dex

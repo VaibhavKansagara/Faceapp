@@ -31,15 +31,7 @@ import android.util.Log
 import android.view.View
 import android.view.animation.AnimationUtils
 import android.view.animation.BounceInterpolator
-import android.widget.Button
-import android.widget.FrameLayout
-import android.widget.HorizontalScrollView
-import android.widget.ImageButton
-import android.widget.ImageView
-import android.widget.ProgressBar
-import android.widget.Switch
-import android.widget.TextView
-import android.widget.Toast
+import android.widget.*
 import com.bumptech.glide.Glide
 import com.bumptech.glide.load.engine.bitmap_recycle.BitmapPool
 import com.bumptech.glide.load.resource.bitmap.BitmapTransformation
@@ -93,84 +85,112 @@ class MainActivity :
 
   override fun onCreate(savedInstanceState: Bundle?) {
     super.onCreate(savedInstanceState)
-    setContentView(R.layout.activity_main)
+    setContentView(R.layout.login)
 
-    val toolbar: Toolbar = findViewById(R.id.toolbar)
-    setSupportActionBar(toolbar)
-    supportActionBar?.setDisplayShowTitleEnabled(false)
+    // get reference to all views
+    var et_user_name = findViewById(R.id.et_user_name) as EditText
+    var et_password = findViewById(R.id.et_password) as EditText
+    var btn_reset = findViewById(R.id.btn_reset) as Button
+    var btn_submit = findViewById(R.id.btn_submit) as Button
 
-    viewFinder = findViewById(R.id.view_finder)
-    resultImageView = findViewById(R.id.result_imageview)
-    originalImageView = findViewById(R.id.original_imageview)
-    styleImageView = findViewById(R.id.style_imageview)
-    captureButton = findViewById(R.id.capture_button)
-    progressBar = findViewById(R.id.progress_circular)
-    horizontalScrollView = findViewById(R.id.horizontal_scroll_view)
-    val useGpuSwitch: Switch = findViewById(R.id.switch_use_gpu)
-
-    // Request camera permissions
-    if (allPermissionsGranted()) {
-      addCameraFragment()
-    } else {
-      ActivityCompat.requestPermissions(
-        this,
-        REQUIRED_PERMISSIONS,
-        REQUEST_CODE_PERMISSIONS
-      )
+    btn_reset.setOnClickListener {
+      // clearing user_name and password edit text views on reset button click
+      et_user_name.setText("")
+      et_password.setText("")
     }
 
-    viewModel = ViewModelProviders.of(this)
-      .get(MLExecutionViewModel::class.java)
+    // set on-click listener
+    btn_submit.setOnClickListener {
+      val user_name = et_user_name.text.trim().toString()
+      val password = et_password.text.trim().toString()
+      // your code to validate the user_name and password combination
+      // and verify the same
+      if (user_name == "username" && password == "password") {
+          val toast = Toast.makeText (getApplicationContext(), "Login Succesfull", Toast.LENGTH_LONG);
+          toast.show();
+          setContentView(R.layout.activity_main)
+          val toolbar: Toolbar = findViewById(R.id.toolbar)
+          setSupportActionBar(toolbar)
+          supportActionBar?.setDisplayShowTitleEnabled(false)
 
-    viewModel.styledBitmap.observe(
-      this,
-      Observer { resultImage ->
-        if (resultImage != null) {
-          updateUIWithResults(resultImage)
-        }
+          viewFinder = findViewById(R.id.view_finder)
+          resultImageView = findViewById(R.id.result_imageview)
+          originalImageView = findViewById(R.id.original_imageview)
+          styleImageView = findViewById(R.id.style_imageview)
+          captureButton = findViewById(R.id.capture_button)
+          progressBar = findViewById(R.id.progress_circular)
+          horizontalScrollView = findViewById(R.id.horizontal_scroll_view)
+          val useGpuSwitch: Switch = findViewById(R.id.switch_use_gpu)
+
+          // Request camera permissions
+          if (allPermissionsGranted()) {
+            addCameraFragment()
+          } else {
+            ActivityCompat.requestPermissions(
+              this,
+              REQUIRED_PERMISSIONS,
+              REQUEST_CODE_PERMISSIONS
+            )
+          }
+
+          viewModel = ViewModelProviders.of(this)
+            .get(MLExecutionViewModel::class.java)
+
+          viewModel.styledBitmap.observe(
+            this,
+            Observer { resultImage ->
+              if (resultImage != null) {
+                updateUIWithResults(resultImage)
+              }
+            }
+          )
+
+          mainScope.async(inferenceThread) {
+            styleTransferModelExecutor = StyleTransferModelExecutor(this@MainActivity, useGPU)
+            Log.d(TAG, "Executor created")
+          }
+
+          useGpuSwitch.setOnCheckedChangeListener { _, isChecked ->
+            useGPU = isChecked
+            // Disable control buttons to avoid running model before initialization
+            enableControls(false)
+
+            // Reinitialize TF Lite models with new GPU setting
+            mainScope.async(inferenceThread) {
+              styleTransferModelExecutor.close()
+              styleTransferModelExecutor = StyleTransferModelExecutor(this@MainActivity, useGPU)
+
+              // Re-enable control buttons
+              runOnUiThread { enableControls(true) }
+            }
+          }
+
+          rerunButton = findViewById(R.id.rerun_button)
+          rerunButton.setOnClickListener {
+            startRunningModel()
+          }
+
+          styleImageView.setOnClickListener {
+            if (!isRunningModel) {
+              stylesFragment.show(supportFragmentManager, "StylesFragment")
+            }
+          }
+
+          progressBar.visibility = View.INVISIBLE
+          lastSavedFile = getLastTakenPicture()
+          setImageView(originalImageView, lastSavedFile)
+
+          animateCameraButton()
+          setupControls()
+          enableControls(true)
+
+          Log.d(TAG, "finished onCreate!!")
+      } else {
+        val toast = Toast.makeText(getApplicationContext(), Login Unsuccesfull", Toast.LENGTH_LONG);
+        toast.show();
+        Log.d(TAG, "Problem logging in: username or password wrong!!")
       }
-    )
-
-    mainScope.async(inferenceThread) {
-      styleTransferModelExecutor = StyleTransferModelExecutor(this@MainActivity, useGPU)
-      Log.d(TAG, "Executor created")
     }
-
-    useGpuSwitch.setOnCheckedChangeListener { _, isChecked ->
-      useGPU = isChecked
-      // Disable control buttons to avoid running model before initialization
-      enableControls(false)
-
-      // Reinitialize TF Lite models with new GPU setting
-      mainScope.async(inferenceThread) {
-        styleTransferModelExecutor.close()
-        styleTransferModelExecutor = StyleTransferModelExecutor(this@MainActivity, useGPU)
-
-        // Re-enable control buttons
-        runOnUiThread { enableControls(true) }
-      }
-    }
-
-    rerunButton = findViewById(R.id.rerun_button)
-    rerunButton.setOnClickListener {
-      startRunningModel()
-    }
-
-    styleImageView.setOnClickListener {
-      if (!isRunningModel) {
-        stylesFragment.show(supportFragmentManager, "StylesFragment")
-      }
-    }
-
-    progressBar.visibility = View.INVISIBLE
-    lastSavedFile = getLastTakenPicture()
-    setImageView(originalImageView, lastSavedFile)
-
-    animateCameraButton()
-    setupControls()
-    enableControls(true)
-
-    Log.d(TAG, "finished onCreate!!")
   }
 
   private fun animateCameraButton() {

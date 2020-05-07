@@ -23,6 +23,10 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/AppTheme" >
+        <meta-data
+            android:name="com.google.android.actions"
+            android:resource="@layout/login" />
+
         <activity
             android:name="org.tensorflow.lite.examples.styletransfer.MainActivity"
             android:exported="true" >

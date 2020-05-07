@@ -1447,6 +1447,8 @@ id blocking
 id bottom
 id bottom_sheet
 id bottom_sheet_arrow
+id btn_reset
+id btn_submit
 id buttonPanel
 id cancel_button
 id capture_button
@@ -1490,6 +1492,8 @@ id edit_query
 id end
 id enterAlways
 id enterAlwaysCollapsed
+id et_password
+id et_user_name
 id exitUntilCollapsed
 id expand_activities_button
 id expanded_menu
@@ -1529,6 +1533,7 @@ id list
 id listMode
 id list_item
 id log_view
+id login_page
 id masked
 id message
 id middle
@@ -1761,6 +1766,7 @@ layout design_text_input_end_icon
 layout design_text_input_start_icon
 layout fragment_style_list
 layout image_item
+layout login
 layout mtrl_alert_dialog
 layout mtrl_alert_dialog_actions
 layout mtrl_alert_dialog_title
