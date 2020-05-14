@@ -92,20 +92,20 @@
         "source": "/home/vaibhav/Desktop/Faceapp/app/src/main/res/mipmap-hdpi/ic_launcher_foreground.png"
     },
     {
-        "merged": "/home/vaibhav/Desktop/Faceapp/app/build/intermediates/res/merged/debug/drawable_abc_list_selector_background_transition_holo_dark.xml.flat",
-        "source": "/home/vaibhav/.gradle/caches/transforms-2/files-2.1/1837f8b0767e7927e6249ddc6b4002b5/appcompat-1.1.0-rc01/res/drawable/abc_list_selector_background_transition_holo_dark.xml"
-    },
-    {
         "merged": "/home/vaibhav/Desktop/Faceapp/app/build/intermediates/res/merged/debug/drawable_abc_tab_indicator_material.xml.flat",
         "source": "/home/vaibhav/.gradle/caches/transforms-2/files-2.1/1837f8b0767e7927e6249ddc6b4002b5/appcompat-1.1.0-rc01/res/drawable/abc_tab_indicator_material.xml"
     },
     {
-        "merged": "/home/vaibhav/Desktop/Faceapp/app/build/intermediates/res/merged/debug/color-v23_abc_tint_switch_track.xml.flat",
-        "source": "/home/vaibhav/.gradle/caches/transforms-2/files-2.1/1837f8b0767e7927e6249ddc6b4002b5/appcompat-1.1.0-rc01/res/color-v23/abc_tint_switch_track.xml"
+        "merged": "/home/vaibhav/Desktop/Faceapp/app/build/intermediates/res/merged/debug/drawable_abc_list_selector_background_transition_holo_dark.xml.flat",
+        "source": "/home/vaibhav/.gradle/caches/transforms-2/files-2.1/1837f8b0767e7927e6249ddc6b4002b5/appcompat-1.1.0-rc01/res/drawable/abc_list_selector_background_transition_holo_dark.xml"
     },
     {
         "merged": "/home/vaibhav/Desktop/Faceapp/app/build/intermediates/res/merged/debug/layout_test_toolbar_elevation.xml.flat",
         "source": "/home/vaibhav/.gradle/caches/transforms-2/files-2.1/a95523a586acae3e7c9fe70f362da108/material-1.1.0-alpha08/res/layout/test_toolbar_elevation.xml"
+    },
+    {
+        "merged": "/home/vaibhav/Desktop/Faceapp/app/build/intermediates/res/merged/debug/color-v23_abc_tint_switch_track.xml.flat",
+        "source": "/home/vaibhav/.gradle/caches/transforms-2/files-2.1/1837f8b0767e7927e6249ddc6b4002b5/appcompat-1.1.0-rc01/res/color-v23/abc_tint_switch_track.xml"
     },
     {
         "merged": "/home/vaibhav/Desktop/Faceapp/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_list_focused_holo.9.png.flat",
@@ -144,12 +144,12 @@
         "source": "/home/vaibhav/.gradle/caches/transforms-2/files-2.1/a95523a586acae3e7c9fe70f362da108/material-1.1.0-alpha08/res/layout/mtrl_calendar_viewpager.xml"
     },
     {
-        "merged": "/home/vaibhav/Desktop/Faceapp/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_ic_star_half_black_48dp.png.flat",
-        "source": "/home/vaibhav/.gradle/caches/transforms-2/files-2.1/1837f8b0767e7927e6249ddc6b4002b5/appcompat-1.1.0-rc01/res/drawable-xxhdpi-v4/abc_ic_star_half_black_48dp.png"
-    },
-    {
         "merged": "/home/vaibhav/Desktop/Faceapp/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_design_ic_visibility_off.png.flat",
         "source": "/home/vaibhav/.gradle/caches/transforms-2/files-2.1/a95523a586acae3e7c9fe70f362da108/material-1.1.0-alpha08/res/drawable-xhdpi-v4/design_ic_visibility_off.png"
+    },
+    {
+        "merged": "/home/vaibhav/Desktop/Faceapp/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_ic_star_half_black_48dp.png.flat",
+        "source": "/home/vaibhav/.gradle/caches/transforms-2/files-2.1/1837f8b0767e7927e6249ddc6b4002b5/appcompat-1.1.0-rc01/res/drawable-xxhdpi-v4/abc_ic_star_half_black_48dp.png"
     },
     {
         "merged": "/home/vaibhav/Desktop/Faceapp/app/build/intermediates/res/merged/debug/layout_mtrl_calendar_day.xml.flat",

@@ -1488,6 +1488,7 @@ id direct
 id disableHome
 id dropdown_menu
 id dummy
+id dummy1
 id edit_query
 id end
 id enterAlways
@@ -1506,6 +1507,7 @@ id filter_chip
 id fitToContents
 id fixed
 id forever
+id gallery_button
 id ghost_view
 id glide_custom_view_target_tag
 id gone

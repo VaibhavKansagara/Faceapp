@@ -51,18 +51,18 @@
                 <ImageView
                     android:id="@+id/original_imageview"
                     android:layout_width="@dimen/previewSize"
-                    android:layout_height="@dimen/previewSize"
+                    android:layout_height="200dp"
                     android:padding="4dp"
                     android:src="@android:drawable/ic_menu_camera" />
 
                 <FrameLayout
                     android:layout_width="@dimen/previewSize"
-                    android:layout_height="@dimen/previewSize">
+                    android:layout_height="200dp">
 
                     <ImageView
                         android:id="@+id/style_imageview"
                         android:layout_width="@dimen/previewSize"
-                        android:layout_height="@dimen/previewSize"
+                        android:layout_height="200dp"
                         android:padding="4dp"
                         android:src="@drawable/styles_square_thumb" />
 
@@ -81,7 +81,7 @@
 
                 <FrameLayout
                     android:layout_width="@dimen/previewSize"
-                    android:layout_height="@dimen/previewSize">
+                    android:layout_height="200dp">
 
                     <ProgressBar
                         android:id="@+id/progress_circular"
@@ -92,13 +92,12 @@
                     <ImageView
                         android:id="@+id/result_imageview"
                         android:layout_width="@dimen/previewSize"
-                        android:layout_height="@dimen/previewSize"
+                        android:layout_height="200dp"
                         android:padding="4dp" />
                 </FrameLayout>
 
             </LinearLayout>
         </HorizontalScrollView>
-
     </LinearLayout>
 
     <include layout="@layout/bottom_sheet_layout" />
@@ -118,7 +117,7 @@
     <View
         android:id="@+id/dummy"
         android:layout_width="1dp"
-        android:layout_height="80dp"
+        android:layout_height="50dp"
         android:layout_marginEnd="8dp"
         app:layout_anchor="@id/capture_button"
         app:layout_anchorGravity="top|right|end" />
@@ -134,4 +133,25 @@
         app:layout_anchor="@id/dummy"
         app:layout_anchorGravity="top|end"
         app:srcCompat="@android:drawable/ic_popup_sync" />
+
+    <View
+        android:id="@+id/dummy1"
+        android:layout_width="1dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="8dp"
+        app:layout_anchor="@id/toggle_button"
+        app:layout_anchorGravity="top|right|end" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/gallery_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:layout_marginEnd="8dp"
+        android:clickable="true"
+        app:backgroundTint="@color/colorPrimaryDark"
+        app:layout_anchor="@id/dummy1"
+        app:layout_anchorGravity="top|end"
+        app:srcCompat="@android:drawable/ic_menu_gallery" />
+
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

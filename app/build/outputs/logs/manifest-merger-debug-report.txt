@@ -15,8 +15,8 @@ MERGED from [androidx.lifecycle:lifecycle-extensions:2.1.0-alpha02] /home/vaibha
 MERGED from [androidx.viewpager2:viewpager2:1.0.0-alpha06] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/5518cb6c38b2ba28621b59abd60c6db2/viewpager2-1.0.0-alpha06/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.recyclerview:recyclerview:1.1.0-beta01] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/bbee2e3bf5916e278660ed46e35ef588/recyclerview-1.1.0-beta01/AndroidManifest.xml:17:1-24:12
 MERGED from [com.github.bumptech.glide:glide:4.9.0] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/2e7ab68fe9aac48828ee1ea9652baa4b/jetified-glide-4.9.0/AndroidManifest.xml:2:1-12:12
-MERGED from [org.tensorflow:tensorflow-lite:0.0.0-nightly] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/5d34f021a40675e1035d3e3fa00778c5/tensorflow-lite-0.0.0-nightly/AndroidManifest.xml:2:1-12:12
-MERGED from [org.tensorflow:tensorflow-lite-gpu:0.0.0-nightly] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/40538850fa23994e47672a412848de65/tensorflow-lite-gpu-0.0.0-nightly/AndroidManifest.xml:2:1-12:12
+MERGED from [org.tensorflow:tensorflow-lite:0.0.0-nightly] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/d2bbe9b76a4e2219cf1e547890866b5b/tensorflow-lite-0.0.0-nightly/AndroidManifest.xml:2:1-12:12
+MERGED from [org.tensorflow:tensorflow-lite-gpu:0.0.0-nightly] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/41fcdd2f6f9ee8d4390e787ec640ad23/tensorflow-lite-gpu-0.0.0-nightly/AndroidManifest.xml:2:1-12:12
 MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/84e7b3c46c06e979e738dcc91be53324/legacy-support-core-ui-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/87ecedb3a0ee2fa2ecb97b88faf9810f/cursoradapter-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.fragment:fragment:1.1.0-rc01] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/e26d4deae1ae46b9a0e94ef07c84c35c/fragment-1.1.0-rc01/AndroidManifest.xml:17:1-24:12
@@ -94,10 +94,10 @@ MERGED from [androidx.recyclerview:recyclerview:1.1.0-beta01] /home/vaibhav/.gra
 MERGED from [androidx.recyclerview:recyclerview:1.1.0-beta01] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/bbee2e3bf5916e278660ed46e35ef588/recyclerview-1.1.0-beta01/AndroidManifest.xml:20:5-22:41
 MERGED from [com.github.bumptech.glide:glide:4.9.0] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/2e7ab68fe9aac48828ee1ea9652baa4b/jetified-glide-4.9.0/AndroidManifest.xml:6:5-8:41
 MERGED from [com.github.bumptech.glide:glide:4.9.0] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/2e7ab68fe9aac48828ee1ea9652baa4b/jetified-glide-4.9.0/AndroidManifest.xml:6:5-8:41
-MERGED from [org.tensorflow:tensorflow-lite:0.0.0-nightly] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/5d34f021a40675e1035d3e3fa00778c5/tensorflow-lite-0.0.0-nightly/AndroidManifest.xml:7:5-8:41
-MERGED from [org.tensorflow:tensorflow-lite:0.0.0-nightly] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/5d34f021a40675e1035d3e3fa00778c5/tensorflow-lite-0.0.0-nightly/AndroidManifest.xml:7:5-8:41
-MERGED from [org.tensorflow:tensorflow-lite-gpu:0.0.0-nightly] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/40538850fa23994e47672a412848de65/tensorflow-lite-gpu-0.0.0-nightly/AndroidManifest.xml:7:5-8:41
-MERGED from [org.tensorflow:tensorflow-lite-gpu:0.0.0-nightly] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/40538850fa23994e47672a412848de65/tensorflow-lite-gpu-0.0.0-nightly/AndroidManifest.xml:7:5-8:41
+MERGED from [org.tensorflow:tensorflow-lite:0.0.0-nightly] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/d2bbe9b76a4e2219cf1e547890866b5b/tensorflow-lite-0.0.0-nightly/AndroidManifest.xml:7:5-8:41
+MERGED from [org.tensorflow:tensorflow-lite:0.0.0-nightly] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/d2bbe9b76a4e2219cf1e547890866b5b/tensorflow-lite-0.0.0-nightly/AndroidManifest.xml:7:5-8:41
+MERGED from [org.tensorflow:tensorflow-lite-gpu:0.0.0-nightly] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/41fcdd2f6f9ee8d4390e787ec640ad23/tensorflow-lite-gpu-0.0.0-nightly/AndroidManifest.xml:7:5-8:41
+MERGED from [org.tensorflow:tensorflow-lite-gpu:0.0.0-nightly] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/41fcdd2f6f9ee8d4390e787ec640ad23/tensorflow-lite-gpu-0.0.0-nightly/AndroidManifest.xml:7:5-8:41
 MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/84e7b3c46c06e979e738dcc91be53324/legacy-support-core-ui-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/84e7b3c46c06e979e738dcc91be53324/legacy-support-core-ui-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/87ecedb3a0ee2fa2ecb97b88faf9810f/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
@@ -182,6 +182,10 @@ uses-permission#android.permission.CAMERA
 ADDED from /home/vaibhav/Desktop/Faceapp/app/src/main/AndroidManifest.xml:7:5-65
 	android:name
 		ADDED from /home/vaibhav/Desktop/Faceapp/app/src/main/AndroidManifest.xml:7:22-62
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from /home/vaibhav/Desktop/Faceapp/app/src/main/AndroidManifest.xml:8:5-80
+	android:name
+		ADDED from /home/vaibhav/Desktop/Faceapp/app/src/main/AndroidManifest.xml:8:22-78
 uses-feature#android.hardware.camera.any
 ADDED from /home/vaibhav/Desktop/Faceapp/app/src/main/AndroidManifest.xml:9:5-64
 	android:name
@@ -198,10 +202,10 @@ MERGED from [androidx.lifecycle:lifecycle-extensions:2.1.0-alpha02] /home/vaibha
 MERGED from [androidx.lifecycle:lifecycle-extensions:2.1.0-alpha02] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/60f94f0e2a75646049cebd38673b6baf/lifecycle-extensions-2.1.0-alpha02/AndroidManifest.xml:22:5-23:19
 MERGED from [com.github.bumptech.glide:glide:4.9.0] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/2e7ab68fe9aac48828ee1ea9652baa4b/jetified-glide-4.9.0/AndroidManifest.xml:10:5-20
 MERGED from [com.github.bumptech.glide:glide:4.9.0] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/2e7ab68fe9aac48828ee1ea9652baa4b/jetified-glide-4.9.0/AndroidManifest.xml:10:5-20
-MERGED from [org.tensorflow:tensorflow-lite:0.0.0-nightly] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/5d34f021a40675e1035d3e3fa00778c5/tensorflow-lite-0.0.0-nightly/AndroidManifest.xml:10:5-20
-MERGED from [org.tensorflow:tensorflow-lite:0.0.0-nightly] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/5d34f021a40675e1035d3e3fa00778c5/tensorflow-lite-0.0.0-nightly/AndroidManifest.xml:10:5-20
-MERGED from [org.tensorflow:tensorflow-lite-gpu:0.0.0-nightly] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/40538850fa23994e47672a412848de65/tensorflow-lite-gpu-0.0.0-nightly/AndroidManifest.xml:10:5-20
-MERGED from [org.tensorflow:tensorflow-lite-gpu:0.0.0-nightly] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/40538850fa23994e47672a412848de65/tensorflow-lite-gpu-0.0.0-nightly/AndroidManifest.xml:10:5-20
+MERGED from [org.tensorflow:tensorflow-lite:0.0.0-nightly] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/d2bbe9b76a4e2219cf1e547890866b5b/tensorflow-lite-0.0.0-nightly/AndroidManifest.xml:10:5-20
+MERGED from [org.tensorflow:tensorflow-lite:0.0.0-nightly] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/d2bbe9b76a4e2219cf1e547890866b5b/tensorflow-lite-0.0.0-nightly/AndroidManifest.xml:10:5-20
+MERGED from [org.tensorflow:tensorflow-lite-gpu:0.0.0-nightly] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/41fcdd2f6f9ee8d4390e787ec640ad23/tensorflow-lite-gpu-0.0.0-nightly/AndroidManifest.xml:10:5-20
+MERGED from [org.tensorflow:tensorflow-lite-gpu:0.0.0-nightly] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/41fcdd2f6f9ee8d4390e787ec640ad23/tensorflow-lite-gpu-0.0.0-nightly/AndroidManifest.xml:10:5-20
 MERGED from [com.github.bumptech.glide:gifdecoder:4.9.0] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/5d5684d0035ce15798e0de73c7491e9c/jetified-gifdecoder-4.9.0/AndroidManifest.xml:9:5-20
 MERGED from [com.github.bumptech.glide:gifdecoder:4.9.0] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/5d5684d0035ce15798e0de73c7491e9c/jetified-gifdecoder-4.9.0/AndroidManifest.xml:9:5-20
 MERGED from [androidx.core:core:1.2.0-alpha01] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/da8b1a37eb6235e5110b780632de7943/core-1.2.0-alpha01/AndroidManifest.xml:22:5-89

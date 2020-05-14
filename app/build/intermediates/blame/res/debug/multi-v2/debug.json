@@ -702,6 +702,21 @@
             ]
         },
         {
+            "outputFile": "/home/vaibhav/Desktop/Faceapp/app/build/intermediates/res/merged/debug/values-xlarge-v4_values-xlarge-v4.arsc.flat",
+            "map": [
+                {
+                    "source": "/home/vaibhav/.gradle/caches/transforms-2/files-2.1/1837f8b0767e7927e6249ddc6b4002b5/appcompat-1.1.0-rc01/res/values-xlarge-v4/values-xlarge-v4.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7",
+                        "startColumns": "4,4,4,4,4,4",
+                        "startOffsets": "55,126,197,267,337,405",
+                        "endColumns": "70,70,69,69,67,67",
+                        "endOffsets": "121,192,262,332,400,468"
+                    }
+                }
+            ]
+        },
+        {
             "outputFile": "/home/vaibhav/Desktop/Faceapp/app/build/intermediates/res/merged/debug/values-iw_values-iw.arsc.flat",
             "map": [
                 {
@@ -729,21 +744,6 @@
                         "startOffsets": "2842",
                         "endColumns": "100",
                         "endOffsets": "2938"
-                    }
-                }
-            ]
-        },
-        {
-            "outputFile": "/home/vaibhav/Desktop/Faceapp/app/build/intermediates/res/merged/debug/values-xlarge-v4_values-xlarge-v4.arsc.flat",
-            "map": [
-                {
-                    "source": "/home/vaibhav/.gradle/caches/transforms-2/files-2.1/1837f8b0767e7927e6249ddc6b4002b5/appcompat-1.1.0-rc01/res/values-xlarge-v4/values-xlarge-v4.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7",
-                        "startColumns": "4,4,4,4,4,4",
-                        "startOffsets": "55,126,197,267,337,405",
-                        "endColumns": "70,70,69,69,67,67",
-                        "endOffsets": "121,192,262,332,400,468"
                     }
                 }
             ]

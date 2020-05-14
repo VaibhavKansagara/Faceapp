@@ -17,12 +17,19 @@
 package org.tensorflow.lite.examples.styletransfer
 
 import android.Manifest
+import android.Manifest.permission.READ_EXTERNAL_STORAGE
+import android.app.Activity
+import android.content.Intent
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
 import android.content.pm.PackageManager
 import android.graphics.Bitmap
+import android.graphics.BitmapFactory
 import android.hardware.camera2.CameraCharacteristics
+import android.net.Uri
+import android.os.Build
 import android.os.Bundle
+import android.provider.MediaStore
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
 import androidx.appcompat.app.AppCompatActivity
@@ -43,6 +50,7 @@ import java.util.concurrent.Executors
 import kotlinx.coroutines.MainScope
 import kotlinx.coroutines.asCoroutineDispatcher
 import kotlinx.coroutines.async
+import org.tensorflow.lite.examples.styletransfer.RealPathUtil.getRealPath
 import org.tensorflow.lite.examples.styletransfer.camera.CameraFragment
 
 // This is an arbitrary number we are using to keep tab of the permission
@@ -72,6 +80,7 @@ class MainActivity :
   private lateinit var styleImageView: ImageView
   private lateinit var rerunButton: Button
   private lateinit var captureButton: ImageButton
+  private lateinit var galleryButton: ImageButton
   private lateinit var progressBar: ProgressBar
   private lateinit var horizontalScrollView: HorizontalScrollView
 
@@ -82,6 +91,8 @@ class MainActivity :
   private val mainScope = MainScope()
 
   private var lensFacing = CameraCharacteristics.LENS_FACING_FRONT
+  private val FINAL_CHOOSE_PHOTO = 1
+  private val READ_EXTERNAL_STORAGE_REQUEST_CODE = 2
 
   override fun onCreate(savedInstanceState: Bundle?) {
     super.onCreate(savedInstanceState)
@@ -118,6 +129,7 @@ class MainActivity :
           originalImageView = findViewById(R.id.original_imageview)
           styleImageView = findViewById(R.id.style_imageview)
           captureButton = findViewById(R.id.capture_button)
+          galleryButton = findViewById(R.id.gallery_button)
           progressBar = findViewById(R.id.progress_circular)
           horizontalScrollView = findViewById(R.id.horizontal_scroll_view)
           val useGpuSwitch: Switch = findViewById(R.id.switch_use_gpu)
@@ -176,6 +188,10 @@ class MainActivity :
             }
           }
 
+          galleryButton.setOnClickListener {
+            pickImage()
+          }
+
           progressBar.visibility = View.INVISIBLE
           lastSavedFile = getLastTakenPicture()
           setImageView(originalImageView, lastSavedFile)
@@ -186,13 +202,26 @@ class MainActivity :
 
           Log.d(TAG, "finished onCreate!!")
       } else {
-        val toast = Toast.makeText(getApplicationContext(), Login Unsuccesfull", Toast.LENGTH_LONG);
+        val toast = Toast.makeText(getApplicationContext(), "Login Unsuccesfull", Toast.LENGTH_LONG);
         toast.show();
         Log.d(TAG, "Problem logging in: username or password wrong!!")
       }
     }
   }
 
+  private fun pickImage() {
+    if (ActivityCompat.checkSelfPermission(this, READ_EXTERNAL_STORAGE) == PackageManager.PERMISSION_GRANTED) {
+      val intent = Intent("android.intent.action.GET_CONTENT")
+      intent.type = "image/*"
+      startActivityForResult(intent, FINAL_CHOOSE_PHOTO)
+    } else {
+      ActivityCompat.requestPermissions(
+        this,
+        arrayOf(Manifest.permission.READ_EXTERNAL_STORAGE),
+        READ_EXTERNAL_STORAGE_REQUEST_CODE
+      )
+    }
+  }
   private fun animateCameraButton() {
     val animation = AnimationUtils.loadAnimation(this, R.anim.scale_anim)
     animation.interpolator = BounceInterpolator()
@@ -215,6 +244,31 @@ class MainActivity :
       .override(512, 512)
       .apply(RequestOptions().transform(CropTop()))
       .into(imageView)
+  }
+
+  override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
+    super.onActivityResult(requestCode, resultCode, data)
+    when(requestCode) {
+      FINAL_CHOOSE_PHOTO->
+        if (resultCode == Activity.RESULT_OK) {
+          if (data == null) {
+            // display a toast
+            val toast = Toast.makeText(getApplicationContext(), "Choosing From Gallery Unsuccesfull",
+                                       Toast.LENGTH_LONG)
+            toast.show()
+            Log.d(TAG, "Choosing From Gallery Unsuccesfull")
+          } else {
+            val uri = data.data
+            val filePath = uri?.let { getRealPath(getApplicationContext(), it) }
+              val imgfile = File(filePath)
+              if (imgfile.exists()) {
+                  val mybitmap = BitmapFactory.decodeFile(imgfile.absolutePath)
+                  setImageView(originalImageView, mybitmap)
+                  lastSavedFile = imgfile.absolutePath
+              }
+          }
+        }
+    }
   }
 
   private fun updateUIWithResults(modelExecutionResult: ModelExecutionResult) {
@@ -280,6 +334,13 @@ class MainActivity :
           Toast.LENGTH_SHORT
         ).show()
         finish()
+      }
+    }
+
+    if (requestCode == READ_EXTERNAL_STORAGE_REQUEST_CODE) {
+      if (grantResults[0] == PackageManager.PERMISSION_GRANTED) {
+        // pick image after request permission success
+        pickImage()
       }
     }
   }
