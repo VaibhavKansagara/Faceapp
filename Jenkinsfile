@@ -1,4 +1,9 @@
 pipeline {
+  environment {
+    registry = "vaibhavkansagara/faceapp"
+    registryCredential = 'dockerhub'
+    dockerImage = ''
+  }
   agent any
   stages {
   	stage('Clean') {
@@ -34,6 +39,27 @@ pipeline {
         // Test the app
         sh './gradlew connectedDebugAndroidTest'
       }
+    }
+
+    stage('DockerHub') {
+        stages{
+          stage('Build Image') {
+            steps{
+              script {
+                dockerImage = docker.build registry + ":$BUILD_NUMBER"
+              }
+            }
+          }
+          stage('Push Image') {
+            steps{
+              script {
+                docker.withRegistry( '', registryCredential ) {
+                  dockerImage.push()
+                }
+              }
+            }
+          }
+        }
     }
   }
 }
