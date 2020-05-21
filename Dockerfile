@@ -18,6 +18,8 @@ RUN apt-get install -y openjdk-8-jdk
 
 # RUN mkdir -p /user/local/android-sdk-linux
 
+RUN apt-get install zip \
+    unzip
 
 
 # Download Android SDK
