@@ -61,24 +61,13 @@ RUN mkdir "$ANDROID_HOME/licenses" || true \
 # RUN which adb
 # RUN which android
 
-
-# Create emulator
-RUN echo "no" | android create avd \
-                --force \
-                --device "Nexus 5" \
-                --name test \
-                --target android-24 \
-                --abi armeabi-v7a \
-                --skin WVGA800 \
-                --sdcard 512M
-
 RUN sh ./gradlew --refresh-dependencies clean
 RUN sh './gradlew assembleDebug'
 RUN archiveArtifacts '**/*.apk'
 RUN sh './gradlew lintDebug'
 RUN androidLint pattern: '**/lint-results-*.xml'
-RUN sh './gradlew installDebug'
-RUN sh './gradlew connectedDebugAndroidTest'
+# RUN sh './gradlew installDebug'
+# RUN sh './gradlew connectedDebugAndroidTest'
 
 # Cleaning
 RUN apt-get clean
