@@ -60,11 +60,7 @@ RUN yes | $ANDROID_HOME/tools/bin/sdkmanager "platforms;android-26"
 WORKDIR /build
 COPY . /build/
 
-RUN /build/gradlew --refresh-dependencies clean
-RUN /build/gradlew assembleDebug
-RUN /build/gradlew lintDebug
 RUN /build/gradlew installDebug
-RUN /build/gradlew connectedDebugAndroidTest
 
 # Cleaning
 RUN apt-get clean
