@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/home/vaibhav/Desktop/Faceapp/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-pa/values-pa.xml",
+            "outputFile": "/home/vaibhav/Documents/Faceapp/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-pa/values-pa.xml",
             "map": [
                 {
                     "source": "/home/vaibhav/.gradle/caches/transforms-2/files-2.1/da8b1a37eb6235e5110b780632de7943/core-1.2.0-alpha01/res/values-pa/values-pa.xml",

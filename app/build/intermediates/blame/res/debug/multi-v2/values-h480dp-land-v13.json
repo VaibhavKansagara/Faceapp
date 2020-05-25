@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/home/vaibhav/Desktop/Faceapp/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-h480dp-land-v13/values-h480dp-land-v13.xml",
+            "outputFile": "/home/vaibhav/Documents/Faceapp/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-h480dp-land-v13/values-h480dp-land-v13.xml",
             "map": [
                 {
                     "source": "/home/vaibhav/.gradle/caches/transforms-2/files-2.1/a95523a586acae3e7c9fe70f362da108/material-1.1.0-alpha08/res/values-h480dp-land-v13/values-h480dp-land-v13.xml",

@@ -5,63 +5,64 @@
 5    android:versionName="1.0" >
 6
 7    <uses-sdk
-7-->/home/vaibhav/Desktop/Faceapp/app/src/main/AndroidManifest.xml:5:5-17
+7-->/home/vaibhav/Documents/Faceapp/app/src/main/AndroidManifest.xml:5:5-17
 8        android:minSdkVersion="26"
-8-->/home/vaibhav/Desktop/Faceapp/app/src/main/AndroidManifest.xml:5:5-17
+8-->/home/vaibhav/Documents/Faceapp/app/src/main/AndroidManifest.xml:5:5-17
 9        android:targetSdkVersion="28" />
-9-->/home/vaibhav/Desktop/Faceapp/app/src/main/AndroidManifest.xml:5:5-17
+9-->/home/vaibhav/Documents/Faceapp/app/src/main/AndroidManifest.xml:5:5-17
 10
 11    <uses-permission android:name="android.permission.CAMERA" />
-11-->/home/vaibhav/Desktop/Faceapp/app/src/main/AndroidManifest.xml:7:5-65
-11-->/home/vaibhav/Desktop/Faceapp/app/src/main/AndroidManifest.xml:7:22-62
+11-->/home/vaibhav/Documents/Faceapp/app/src/main/AndroidManifest.xml:7:5-65
+11-->/home/vaibhav/Documents/Faceapp/app/src/main/AndroidManifest.xml:7:22-62
 12    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-12-->/home/vaibhav/Desktop/Faceapp/app/src/main/AndroidManifest.xml:8:5-80
-12-->/home/vaibhav/Desktop/Faceapp/app/src/main/AndroidManifest.xml:8:22-78
+12-->/home/vaibhav/Documents/Faceapp/app/src/main/AndroidManifest.xml:8:5-80
+12-->/home/vaibhav/Documents/Faceapp/app/src/main/AndroidManifest.xml:8:22-78
 13
 14    <uses-feature android:name="android.hardware.camera.any" />
-14-->/home/vaibhav/Desktop/Faceapp/app/src/main/AndroidManifest.xml:9:5-64
-14-->/home/vaibhav/Desktop/Faceapp/app/src/main/AndroidManifest.xml:9:19-61
+14-->/home/vaibhav/Documents/Faceapp/app/src/main/AndroidManifest.xml:9:5-64
+14-->/home/vaibhav/Documents/Faceapp/app/src/main/AndroidManifest.xml:9:19-61
 15
 16    <application
-16-->/home/vaibhav/Desktop/Faceapp/app/src/main/AndroidManifest.xml:11:5-31:19
+16-->/home/vaibhav/Documents/Faceapp/app/src/main/AndroidManifest.xml:11:5-32:19
 17        android:allowBackup="true"
-17-->/home/vaibhav/Desktop/Faceapp/app/src/main/AndroidManifest.xml:12:9-35
+17-->/home/vaibhav/Documents/Faceapp/app/src/main/AndroidManifest.xml:12:9-35
 18        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
 18-->[androidx.core:core:1.2.0-alpha01] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/da8b1a37eb6235e5110b780632de7943/core-1.2.0-alpha01/AndroidManifest.xml:22:18-86
 19        android:debuggable="true"
 20        android:icon="@mipmap/ic_launcher"
-20-->/home/vaibhav/Desktop/Faceapp/app/src/main/AndroidManifest.xml:13:9-43
+20-->/home/vaibhav/Documents/Faceapp/app/src/main/AndroidManifest.xml:13:9-43
 21        android:label="@string/app_name"
-21-->/home/vaibhav/Desktop/Faceapp/app/src/main/AndroidManifest.xml:14:9-41
+21-->/home/vaibhav/Documents/Faceapp/app/src/main/AndroidManifest.xml:14:9-41
 22        android:roundIcon="@mipmap/ic_launcher_round"
-22-->/home/vaibhav/Desktop/Faceapp/app/src/main/AndroidManifest.xml:15:9-54
+22-->/home/vaibhav/Documents/Faceapp/app/src/main/AndroidManifest.xml:15:9-54
 23        android:supportsRtl="true"
-23-->/home/vaibhav/Desktop/Faceapp/app/src/main/AndroidManifest.xml:16:9-35
-24        android:testOnly="true"
+23-->/home/vaibhav/Documents/Faceapp/app/src/main/AndroidManifest.xml:16:9-35
+24        android:testOnly="false"
+24-->/home/vaibhav/Documents/Faceapp/app/src/main/AndroidManifest.xml:17:9-33
 25        android:theme="@style/AppTheme" >
-25-->/home/vaibhav/Desktop/Faceapp/app/src/main/AndroidManifest.xml:17:9-40
+25-->/home/vaibhav/Documents/Faceapp/app/src/main/AndroidManifest.xml:18:9-40
 26        <meta-data
-26-->/home/vaibhav/Desktop/Faceapp/app/src/main/AndroidManifest.xml:18:9-20:48
+26-->/home/vaibhav/Documents/Faceapp/app/src/main/AndroidManifest.xml:19:9-21:48
 27            android:name="com.google.android.actions"
-27-->/home/vaibhav/Desktop/Faceapp/app/src/main/AndroidManifest.xml:19:13-54
+27-->/home/vaibhav/Documents/Faceapp/app/src/main/AndroidManifest.xml:20:13-54
 28            android:resource="@layout/login" />
-28-->/home/vaibhav/Desktop/Faceapp/app/src/main/AndroidManifest.xml:20:13-45
+28-->/home/vaibhav/Documents/Faceapp/app/src/main/AndroidManifest.xml:21:13-45
 29
 30        <activity
-30-->/home/vaibhav/Desktop/Faceapp/app/src/main/AndroidManifest.xml:22:9-30:20
+30-->/home/vaibhav/Documents/Faceapp/app/src/main/AndroidManifest.xml:23:9-31:20
 31            android:name="org.tensorflow.lite.examples.styletransfer.MainActivity"
-31-->/home/vaibhav/Desktop/Faceapp/app/src/main/AndroidManifest.xml:23:13-41
+31-->/home/vaibhav/Documents/Faceapp/app/src/main/AndroidManifest.xml:24:13-41
 32            android:exported="true" >
-32-->/home/vaibhav/Desktop/Faceapp/app/src/main/AndroidManifest.xml:24:13-36
+32-->/home/vaibhav/Documents/Faceapp/app/src/main/AndroidManifest.xml:25:13-36
 33            <intent-filter>
-33-->/home/vaibhav/Desktop/Faceapp/app/src/main/AndroidManifest.xml:25:13-29:29
+33-->/home/vaibhav/Documents/Faceapp/app/src/main/AndroidManifest.xml:26:13-30:29
 34                <action android:name="android.intent.action.MAIN" />
-34-->/home/vaibhav/Desktop/Faceapp/app/src/main/AndroidManifest.xml:26:17-69
-34-->/home/vaibhav/Desktop/Faceapp/app/src/main/AndroidManifest.xml:26:25-66
+34-->/home/vaibhav/Documents/Faceapp/app/src/main/AndroidManifest.xml:27:17-69
+34-->/home/vaibhav/Documents/Faceapp/app/src/main/AndroidManifest.xml:27:25-66
 35
 36                <category android:name="android.intent.category.LAUNCHER" />
-36-->/home/vaibhav/Desktop/Faceapp/app/src/main/AndroidManifest.xml:28:17-77
-36-->/home/vaibhav/Desktop/Faceapp/app/src/main/AndroidManifest.xml:28:27-74
+36-->/home/vaibhav/Documents/Faceapp/app/src/main/AndroidManifest.xml:29:17-77
+36-->/home/vaibhav/Documents/Faceapp/app/src/main/AndroidManifest.xml:29:27-74
 37            </intent-filter>
 38        </activity>
 39

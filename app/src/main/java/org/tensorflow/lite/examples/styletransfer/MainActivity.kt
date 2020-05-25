@@ -117,6 +117,7 @@ class MainActivity :
       // your code to validate the user_name and password combination
       // and verify the same
       if (user_name == "username" && password == "password") {
+	  Log.d(TAG, "Login Succesfull");
           val toast = Toast.makeText (getApplicationContext(), "Login Succesfull", Toast.LENGTH_LONG);
           toast.show();
           setContentView(R.layout.activity_main)
@@ -235,6 +236,7 @@ class MainActivity :
       .override(512, 512)
       .fitCenter()
       .into(imageView)
+      Log.d(TAG, "Setting image view with Bitmap")
   }
 
   private fun setImageView(imageView: ImageView, imagePath: String) {
@@ -244,6 +246,7 @@ class MainActivity :
       .override(512, 512)
       .apply(RequestOptions().transform(CropTop()))
       .into(imageView)
+      Log.d(TAG, "Setting image view with Image path")
   }
 
   override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
@@ -265,7 +268,10 @@ class MainActivity :
                   val mybitmap = BitmapFactory.decodeFile(imgfile.absolutePath)
                   setImageView(originalImageView, mybitmap)
                   lastSavedFile = imgfile.absolutePath
-              }
+		  Log.d(TAG, "Choosing From Gallery Succesfull")
+              } else {
+		  Log.d(TAG, "Image doesn't exist")
+	      }
           }
         }
     }
@@ -334,6 +340,7 @@ class MainActivity :
           Toast.LENGTH_SHORT
         ).show()
         finish()
+	Log.d(TAG, "Permissions not granted by the user.")
       }
     }
 

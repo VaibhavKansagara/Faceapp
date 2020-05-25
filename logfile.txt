@@ -1,0 +1,20 @@
+05-24 20:08:47.010 12119 12119 D MainActivity: Setting image view with Bitmap
+05-24 20:08:47.010 12119 12119 D MainActivity: Choosing From Gallery Succesfull
+05-24 20:08:51.044 12119 12119 D MainActivity: style12.jpg
+05-24 20:08:51.062 12119 12119 D MainActivity: Setting image view with Image path
+05-24 20:08:53.974 12119 12119 D MainActivity: Setting image view with Bitmap
+05-24 20:09:26.253 13079 13079 D MainActivity: Login Succesfull
+05-24 20:09:26.482 13079 13079 D MainActivity: there is no previous saved file
+05-24 20:09:26.493 13079 13156 D MainActivity: Executor created
+05-24 20:09:26.499 13079 13079 D MainActivity: Setting image view with Image path
+05-24 20:09:26.500 13079 13079 D MainActivity: finished onCreate!!
+05-24 20:09:34.351 13079 13079 D MainActivity: Setting image view with Bitmap
+05-24 20:09:34.351 13079 13079 D MainActivity: Choosing From Gallery Succesfull
+05-24 20:09:36.724 13079 13079 D MainActivity: style12.jpg
+05-24 20:09:36.750 13079 13079 D MainActivity: Setting image view with Image path
+05-24 20:09:40.036 13079 13079 D MainActivity: Setting image view with Bitmap
+05-24 20:09:50.089 13079 13079 D MainActivity: Photo capture succeeded: /data/user/0/org.tensorflow.lite.examples.styletransfersample/files/IMG_2020_05_24_20_09_50_054.jpg
+05-24 20:09:50.093 13079 13079 D MainActivity: Setting image view with Image path
+05-24 20:09:55.651 13079 13079 D MainActivity: style0.jpg
+05-24 20:09:55.678 13079 13079 D MainActivity: Setting image view with Image path
+05-24 20:09:56.872 13079 13079 D MainActivity: Setting image view with Bitmap
