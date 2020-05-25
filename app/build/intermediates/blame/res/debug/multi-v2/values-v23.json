@@ -4,7 +4,7 @@
             "outputFile": "/home/vaibhav/Documents/Faceapp/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v23/values-v23.xml",
             "map": [
                 {
-                    "source": "/home/vaibhav/.gradle/caches/transforms-2/files-2.1/1837f8b0767e7927e6249ddc6b4002b5/appcompat-1.1.0-rc01/res/values-v23/values-v23.xml",
+                    "source": "/root/.gradle/caches/transforms-2/files-2.1/1837f8b0767e7927e6249ddc6b4002b5/appcompat-1.1.0-rc01/res/values-v23/values-v23.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,20,34,35,36,37,41,42,43,44",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -15,7 +15,7 @@
                     }
                 },
                 {
-                    "source": "/home/vaibhav/.gradle/caches/transforms-2/files-2.1/547522511cdac11db948513cc83463de/cardview-1.0.0/res/values-v23/values-v23.xml",
+                    "source": "/root/.gradle/caches/transforms-2/files-2.1/547522511cdac11db948513cc83463de/cardview-1.0.0/res/values-v23/values-v23.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -34,7 +34,7 @@
                     }
                 },
                 {
-                    "source": "/home/vaibhav/.gradle/caches/transforms-2/files-2.1/a95523a586acae3e7c9fe70f362da108/material-1.1.0-alpha08/res/values-v23/values-v23.xml",
+                    "source": "/root/.gradle/caches/transforms-2/files-2.1/a95523a586acae3e7c9fe70f362da108/material-1.1.0-alpha08/res/values-v23/values-v23.xml",
                     "from": {
                         "startLines": "2,6,9,12,16,19",
                         "startColumns": "4,4,4,4,4,4",

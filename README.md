@@ -33,7 +33,7 @@ permission prompts that appear on your phone. Select `Run -> Run app.` Select
 the deployment target in the connected devices to the device on which the app
 will be installed. This will install the app on the device.
 
-To test the app, open the app called `TFL Style Transfer` on your device.
+To test the app, open the app called `FaceApp` on your device.
 Re-installing the app may require you to uninstall the previous installations.
 
 ## Resources used:
