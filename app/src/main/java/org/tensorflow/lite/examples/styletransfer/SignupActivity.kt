@@ -62,11 +62,12 @@ class SignupActivity : AppCompatActivity() {
         val reEnterPassword = _reEnterPasswordText!!.text.toString()
 
         // TODO: Implement your own signup logic here.
+        val sp = getSharedPreferences("Login", MODE_PRIVATE)
+        val editor = sp.edit()
+        editor.putString(email, password)
+        editor.commit()
 
-        android.os.Handler().postDelayed(
-            {
-                onSignupSuccess()
-            }, 3000)
+        onSignupSuccess()
     }
 
 

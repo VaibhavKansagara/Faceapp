@@ -1,6 +1,7 @@
 package org.tensorflow.lite.examples.styletransfer
 
 import android.app.Activity
+import android.content.Context
 import android.content.Intent
 import android.os.Bundle
 import android.util.Log
@@ -50,11 +51,14 @@ class LoginActivity : AppCompatActivity() {
        val password = _passwordText!!.text.toString()
 
        // TODO: Implement your own authentication logic here.
-        onLoginSuccess()
-    //    android.os.Handler().postDelayed(
-    //        {
-    //            onLoginSuccess()
-    //        }, 3000)
+        val sp = this.getSharedPreferences("Login", Context.MODE_PRIVATE)
+        val newPass = sp.getString(email, null)
+
+        if (newPass == password) {
+            onLoginSuccess()
+        } else {
+            onLoginFailed()
+        }
     }
 
     override fun onBackPressed() {
