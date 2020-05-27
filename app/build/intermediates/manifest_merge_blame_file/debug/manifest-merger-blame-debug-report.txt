@@ -5,89 +5,98 @@
 5    android:versionName="1.0" >
 6
 7    <uses-sdk
-7-->/home/vaibhav/Documents/Faceapp/app/src/main/AndroidManifest.xml:5:5-17
+7-->/home/vaibhav/Faceapp/app/src/main/AndroidManifest.xml:5:5-17
 8        android:minSdkVersion="26"
-8-->/home/vaibhav/Documents/Faceapp/app/src/main/AndroidManifest.xml:5:5-17
+8-->/home/vaibhav/Faceapp/app/src/main/AndroidManifest.xml:5:5-17
 9        android:targetSdkVersion="28" />
-9-->/home/vaibhav/Documents/Faceapp/app/src/main/AndroidManifest.xml:5:5-17
+9-->/home/vaibhav/Faceapp/app/src/main/AndroidManifest.xml:5:5-17
 10
 11    <uses-permission android:name="android.permission.CAMERA" />
-11-->/home/vaibhav/Documents/Faceapp/app/src/main/AndroidManifest.xml:7:5-65
-11-->/home/vaibhav/Documents/Faceapp/app/src/main/AndroidManifest.xml:7:22-62
+11-->/home/vaibhav/Faceapp/app/src/main/AndroidManifest.xml:7:5-65
+11-->/home/vaibhav/Faceapp/app/src/main/AndroidManifest.xml:7:22-62
 12    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-12-->/home/vaibhav/Documents/Faceapp/app/src/main/AndroidManifest.xml:8:5-80
-12-->/home/vaibhav/Documents/Faceapp/app/src/main/AndroidManifest.xml:8:22-78
+12-->/home/vaibhav/Faceapp/app/src/main/AndroidManifest.xml:8:5-80
+12-->/home/vaibhav/Faceapp/app/src/main/AndroidManifest.xml:8:22-78
 13
 14    <uses-feature android:name="android.hardware.camera.any" />
-14-->/home/vaibhav/Documents/Faceapp/app/src/main/AndroidManifest.xml:9:5-64
-14-->/home/vaibhav/Documents/Faceapp/app/src/main/AndroidManifest.xml:9:19-61
+14-->/home/vaibhav/Faceapp/app/src/main/AndroidManifest.xml:9:5-64
+14-->/home/vaibhav/Faceapp/app/src/main/AndroidManifest.xml:9:19-61
 15
 16    <application
-16-->/home/vaibhav/Documents/Faceapp/app/src/main/AndroidManifest.xml:11:5-32:19
+16-->/home/vaibhav/Faceapp/app/src/main/AndroidManifest.xml:11:5-39:19
 17        android:allowBackup="true"
-17-->/home/vaibhav/Documents/Faceapp/app/src/main/AndroidManifest.xml:12:9-35
+17-->/home/vaibhav/Faceapp/app/src/main/AndroidManifest.xml:12:9-35
 18        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
 18-->[androidx.core:core:1.2.0-alpha01] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/da8b1a37eb6235e5110b780632de7943/core-1.2.0-alpha01/AndroidManifest.xml:22:18-86
 19        android:debuggable="true"
 20        android:icon="@mipmap/ic_launcher"
-20-->/home/vaibhav/Documents/Faceapp/app/src/main/AndroidManifest.xml:13:9-43
+20-->/home/vaibhav/Faceapp/app/src/main/AndroidManifest.xml:13:9-43
 21        android:label="@string/app_name"
-21-->/home/vaibhav/Documents/Faceapp/app/src/main/AndroidManifest.xml:14:9-41
+21-->/home/vaibhav/Faceapp/app/src/main/AndroidManifest.xml:14:9-41
 22        android:roundIcon="@mipmap/ic_launcher_round"
-22-->/home/vaibhav/Documents/Faceapp/app/src/main/AndroidManifest.xml:15:9-54
+22-->/home/vaibhav/Faceapp/app/src/main/AndroidManifest.xml:15:9-54
 23        android:supportsRtl="true"
-23-->/home/vaibhav/Documents/Faceapp/app/src/main/AndroidManifest.xml:16:9-35
+23-->/home/vaibhav/Faceapp/app/src/main/AndroidManifest.xml:16:9-35
 24        android:testOnly="false"
-24-->/home/vaibhav/Documents/Faceapp/app/src/main/AndroidManifest.xml:17:9-33
+24-->/home/vaibhav/Faceapp/app/src/main/AndroidManifest.xml:17:9-33
 25        android:theme="@style/AppTheme" >
-25-->/home/vaibhav/Documents/Faceapp/app/src/main/AndroidManifest.xml:18:9-40
-26        <meta-data
-26-->/home/vaibhav/Documents/Faceapp/app/src/main/AndroidManifest.xml:19:9-21:48
-27            android:name="com.google.android.actions"
-27-->/home/vaibhav/Documents/Faceapp/app/src/main/AndroidManifest.xml:20:13-54
-28            android:resource="@layout/login" />
-28-->/home/vaibhav/Documents/Faceapp/app/src/main/AndroidManifest.xml:21:13-45
-29
-30        <activity
-30-->/home/vaibhav/Documents/Faceapp/app/src/main/AndroidManifest.xml:23:9-31:20
-31            android:name="org.tensorflow.lite.examples.styletransfer.MainActivity"
-31-->/home/vaibhav/Documents/Faceapp/app/src/main/AndroidManifest.xml:24:13-41
-32            android:exported="true" >
-32-->/home/vaibhav/Documents/Faceapp/app/src/main/AndroidManifest.xml:25:13-36
-33            <intent-filter>
-33-->/home/vaibhav/Documents/Faceapp/app/src/main/AndroidManifest.xml:26:13-30:29
-34                <action android:name="android.intent.action.MAIN" />
-34-->/home/vaibhav/Documents/Faceapp/app/src/main/AndroidManifest.xml:27:17-69
-34-->/home/vaibhav/Documents/Faceapp/app/src/main/AndroidManifest.xml:27:25-66
-35
-36                <category android:name="android.intent.category.LAUNCHER" />
-36-->/home/vaibhav/Documents/Faceapp/app/src/main/AndroidManifest.xml:29:17-77
-36-->/home/vaibhav/Documents/Faceapp/app/src/main/AndroidManifest.xml:29:27-74
-37            </intent-filter>
-38        </activity>
-39
-40        <provider
-40-->[androidx.camera:camera-camera2:1.0.0-alpha02] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/7f21a064c4d219d8e36d493d476c011c/camera-camera2-1.0.0-alpha02/AndroidManifest.xml:25:9-30:43
-41            android:name="androidx.camera.camera2.impl.Camera2Initializer"
-41-->[androidx.camera:camera-camera2:1.0.0-alpha02] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/7f21a064c4d219d8e36d493d476c011c/camera-camera2-1.0.0-alpha02/AndroidManifest.xml:26:13-75
-42            android:authorities="org.tensorflow.lite.examples.styletransfersample.camerax-init"
-42-->[androidx.camera:camera-camera2:1.0.0-alpha02] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/7f21a064c4d219d8e36d493d476c011c/camera-camera2-1.0.0-alpha02/AndroidManifest.xml:27:13-64
-43            android:exported="false"
-43-->[androidx.camera:camera-camera2:1.0.0-alpha02] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/7f21a064c4d219d8e36d493d476c011c/camera-camera2-1.0.0-alpha02/AndroidManifest.xml:28:13-37
-44            android:initOrder="100"
-44-->[androidx.camera:camera-camera2:1.0.0-alpha02] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/7f21a064c4d219d8e36d493d476c011c/camera-camera2-1.0.0-alpha02/AndroidManifest.xml:29:13-36
-45            android:multiprocess="true" />
-45-->[androidx.camera:camera-camera2:1.0.0-alpha02] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/7f21a064c4d219d8e36d493d476c011c/camera-camera2-1.0.0-alpha02/AndroidManifest.xml:30:13-40
-46        <provider
-46-->[androidx.lifecycle:lifecycle-process:2.1.0-alpha02] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/9be16c0571de190b745da01cc819ba57/lifecycle-process-2.1.0-alpha02/AndroidManifest.xml:23:9-27:43
-47            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
-47-->[androidx.lifecycle:lifecycle-process:2.1.0-alpha02] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/9be16c0571de190b745da01cc819ba57/lifecycle-process-2.1.0-alpha02/AndroidManifest.xml:24:13-79
-48            android:authorities="org.tensorflow.lite.examples.styletransfersample.lifecycle-process"
-48-->[androidx.lifecycle:lifecycle-process:2.1.0-alpha02] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/9be16c0571de190b745da01cc819ba57/lifecycle-process-2.1.0-alpha02/AndroidManifest.xml:25:13-69
-49            android:exported="false"
-49-->[androidx.lifecycle:lifecycle-process:2.1.0-alpha02] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/9be16c0571de190b745da01cc819ba57/lifecycle-process-2.1.0-alpha02/AndroidManifest.xml:26:13-37
-50            android:multiprocess="true" />
-50-->[androidx.lifecycle:lifecycle-process:2.1.0-alpha02] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/9be16c0571de190b745da01cc819ba57/lifecycle-process-2.1.0-alpha02/AndroidManifest.xml:27:13-40
-51    </application>
-52
-53</manifest>
+25-->/home/vaibhav/Faceapp/app/src/main/AndroidManifest.xml:18:9-40
+26        <activity
+26-->/home/vaibhav/Faceapp/app/src/main/AndroidManifest.xml:20:9-29:20
+27            android:name="org.tensorflow.lite.examples.styletransfer.LoginActivity"
+27-->/home/vaibhav/Faceapp/app/src/main/AndroidManifest.xml:21:13-42
+28            android:exported="true"
+28-->/home/vaibhav/Faceapp/app/src/main/AndroidManifest.xml:23:13-36
+29            android:theme="@style/AppTheme.Dark" >
+29-->/home/vaibhav/Faceapp/app/src/main/AndroidManifest.xml:22:13-49
+30            <intent-filter>
+30-->/home/vaibhav/Faceapp/app/src/main/AndroidManifest.xml:24:13-28:29
+31                <action android:name="android.intent.action.MAIN" />
+31-->/home/vaibhav/Faceapp/app/src/main/AndroidManifest.xml:25:17-69
+31-->/home/vaibhav/Faceapp/app/src/main/AndroidManifest.xml:25:25-66
+32
+33                <category android:name="android.intent.category.LAUNCHER" />
+33-->/home/vaibhav/Faceapp/app/src/main/AndroidManifest.xml:27:17-77
+33-->/home/vaibhav/Faceapp/app/src/main/AndroidManifest.xml:27:27-74
+34            </intent-filter>
+35        </activity>
+36        <activity
+36-->/home/vaibhav/Faceapp/app/src/main/AndroidManifest.xml:31:9-33:39
+37            android:name="org.tensorflow.lite.examples.styletransfer.MainActivity"
+37-->/home/vaibhav/Faceapp/app/src/main/AndroidManifest.xml:32:13-41
+38            android:exported="true" />
+38-->/home/vaibhav/Faceapp/app/src/main/AndroidManifest.xml:33:13-36
+39        <activity
+39-->/home/vaibhav/Faceapp/app/src/main/AndroidManifest.xml:35:9-38:39
+40            android:name="org.tensorflow.lite.examples.styletransfer.SignupActivity"
+40-->/home/vaibhav/Faceapp/app/src/main/AndroidManifest.xml:36:13-43
+41            android:exported="true"
+41-->/home/vaibhav/Faceapp/app/src/main/AndroidManifest.xml:38:13-36
+42            android:theme="@style/AppTheme.Dark" />
+42-->/home/vaibhav/Faceapp/app/src/main/AndroidManifest.xml:37:13-49
+43
+44        <provider
+44-->[androidx.camera:camera-camera2:1.0.0-alpha02] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/7f21a064c4d219d8e36d493d476c011c/camera-camera2-1.0.0-alpha02/AndroidManifest.xml:25:9-30:43
+45            android:name="androidx.camera.camera2.impl.Camera2Initializer"
+45-->[androidx.camera:camera-camera2:1.0.0-alpha02] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/7f21a064c4d219d8e36d493d476c011c/camera-camera2-1.0.0-alpha02/AndroidManifest.xml:26:13-75
+46            android:authorities="org.tensorflow.lite.examples.styletransfersample.camerax-init"
+46-->[androidx.camera:camera-camera2:1.0.0-alpha02] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/7f21a064c4d219d8e36d493d476c011c/camera-camera2-1.0.0-alpha02/AndroidManifest.xml:27:13-64
+47            android:exported="false"
+47-->[androidx.camera:camera-camera2:1.0.0-alpha02] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/7f21a064c4d219d8e36d493d476c011c/camera-camera2-1.0.0-alpha02/AndroidManifest.xml:28:13-37
+48            android:initOrder="100"
+48-->[androidx.camera:camera-camera2:1.0.0-alpha02] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/7f21a064c4d219d8e36d493d476c011c/camera-camera2-1.0.0-alpha02/AndroidManifest.xml:29:13-36
+49            android:multiprocess="true" />
+49-->[androidx.camera:camera-camera2:1.0.0-alpha02] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/7f21a064c4d219d8e36d493d476c011c/camera-camera2-1.0.0-alpha02/AndroidManifest.xml:30:13-40
+50        <provider
+50-->[androidx.lifecycle:lifecycle-process:2.1.0-alpha02] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/9be16c0571de190b745da01cc819ba57/lifecycle-process-2.1.0-alpha02/AndroidManifest.xml:23:9-27:43
+51            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
+51-->[androidx.lifecycle:lifecycle-process:2.1.0-alpha02] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/9be16c0571de190b745da01cc819ba57/lifecycle-process-2.1.0-alpha02/AndroidManifest.xml:24:13-79
+52            android:authorities="org.tensorflow.lite.examples.styletransfersample.lifecycle-process"
+52-->[androidx.lifecycle:lifecycle-process:2.1.0-alpha02] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/9be16c0571de190b745da01cc819ba57/lifecycle-process-2.1.0-alpha02/AndroidManifest.xml:25:13-69
+53            android:exported="false"
+53-->[androidx.lifecycle:lifecycle-process:2.1.0-alpha02] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/9be16c0571de190b745da01cc819ba57/lifecycle-process-2.1.0-alpha02/AndroidManifest.xml:26:13-37
+54            android:multiprocess="true" />
+54-->[androidx.lifecycle:lifecycle-process:2.1.0-alpha02] /home/vaibhav/.gradle/caches/transforms-2/files-2.1/9be16c0571de190b745da01cc819ba57/lifecycle-process-2.1.0-alpha02/AndroidManifest.xml:27:13-40
+55    </application>
+56
+57</manifest>

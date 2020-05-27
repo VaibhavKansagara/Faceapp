@@ -7,4 +7,19 @@
     <color name="semi_transparent">#66000000</color>
     <color name="toolbar_bg">#ffffff</color>
     <color name="lightGray">#E4E4E4</color>
+
+    <color name="primary">#058edf</color>
+    <color name="primary_dark">#0468a3</color>
+    <color name="primary_darker">#0468a3</color>
+    <color name="accent">#eda20b</color>
+
+    <color name="black">#000000</color>
+    <color name="jet">#222222</color>
+    <color name="oil">#333333</color>
+    <color name="monsoon">#777777</color>
+    <color name="jumbo">#888888</color>
+    <color name="aluminum">#999999</color>
+    <color name="base">#AAAAAA</color>
+    <color name="iron">#CCCCCC</color>
+    <color name="white">#FFFFFF</color>
 </resources>

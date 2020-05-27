@@ -23,19 +23,23 @@
         android:supportsRtl="true"
         android:testOnly="false"
         android:theme="@style/AppTheme" >
-        <meta-data
-            android:name="com.google.android.actions"
-            android:resource="@layout/login" />
-
         <activity
-            android:name="org.tensorflow.lite.examples.styletransfer.MainActivity"
-            android:exported="true" >
+            android:name="org.tensorflow.lite.examples.styletransfer.LoginActivity"
+            android:exported="true"
+            android:theme="@style/AppTheme.Dark" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name="org.tensorflow.lite.examples.styletransfer.MainActivity"
+            android:exported="true" />
+        <activity
+            android:name="org.tensorflow.lite.examples.styletransfer.SignupActivity"
+            android:exported="true"
+            android:theme="@style/AppTheme.Dark" />
 
         <provider
             android:name="androidx.camera.camera2.impl.Camera2Initializer"
