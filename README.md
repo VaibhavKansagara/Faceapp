@@ -14,7 +14,7 @@ image, but “painted” in the style of the style reference image.
 
 ### Step 1. Clone the TensorFlow examples source code
 
-Clone the TensorFlow examples GitHub repository to your computer to get the demo
+Clone the Faceapp GitHub repository to your computer to get the demo
 application.
 
 ```
@@ -23,7 +23,7 @@ git clone https://github.com/sonalgarg2806/Faceapp.git
 
 ### Step 2. Import the sample app to Android Studio
 
-Open the TensorFlow source code in Android Studio. To do this, open Android
+Open the source code in Android Studio. To do this, open Android
 Studio and select `Import Projects (Gradle, Eclipse ADT, etc.)`, setting the
 folder to Faceapp.
 ### Step 3. Run the Android app
