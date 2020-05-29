@@ -18,7 +18,7 @@ Clone the Faceapp GitHub repository to your computer to get the demo
 application.
 
 ```
-git clone https://github.com/sonalgarg2806/Faceapp.git
+git clone https://github.com/VaibhavKansagara/Faceapp.git
 ```
 
 ### Step 2. Import the sample app to Android Studio

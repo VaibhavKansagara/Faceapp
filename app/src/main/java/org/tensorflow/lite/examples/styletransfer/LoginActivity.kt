@@ -1,6 +1,5 @@
 package org.tensorflow.lite.examples.styletransfer
 
-import android.app.Activity
 import android.content.Context
 import android.content.Intent
 import android.os.Bundle
@@ -10,6 +9,7 @@ import android.widget.EditText
 import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import java.util.regex.Pattern
 
 class LoginActivity : AppCompatActivity() {
 
@@ -17,6 +17,16 @@ class LoginActivity : AppCompatActivity() {
     var _passwordText: EditText? = null
     var _loginButton: Button? = null
     var _signupLink: TextView? = null
+
+    val EMAIL_ADDRESS_PATTERN: Pattern = Pattern.compile(
+        "[a-zA-Z0-9\\+\\.\\_\\%\\-\\+]{1,256}" +
+                "\\@" +
+                "[a-zA-Z0-9][a-zA-Z0-9\\-]{0,64}" +
+                "(" +
+                "\\." +
+                "[a-zA-Z0-9][a-zA-Z0-9\\-]{0,25}" +
+                ")+"
+    )
 
     public override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -38,17 +48,15 @@ class LoginActivity : AppCompatActivity() {
 
     fun login() {
        Log.d(TAG, "Login")
+        val email = _emailText!!.text.toString()
+        val password = _passwordText!!.text.toString()
 
-       if (!validate()) {
+       if (!validate(email,password)) {
            onLoginFailed()
            return
        }
 
        _loginButton!!.isEnabled = false
-
-
-       val email = _emailText!!.text.toString()
-       val password = _passwordText!!.text.toString()
 
        // TODO: Implement your own authentication logic here.
         val sp = this.getSharedPreferences("Login", Context.MODE_PRIVATE)
@@ -78,26 +86,14 @@ class LoginActivity : AppCompatActivity() {
         _loginButton!!.isEnabled = true
     }
 
-    fun validate(): Boolean {
+    fun validate(email: String, password: String): Boolean {
         var valid = true
-
-        val email = _emailText!!.text.toString()
-        val password = _passwordText!!.text.toString()
-
-        if (email.isEmpty() || !android.util.Patterns.EMAIL_ADDRESS.matcher(email).matches()) {
-            _emailText!!.error = "enter a valid email address"
+        if (email.isEmpty() || !EMAIL_ADDRESS_PATTERN.matcher(email).matches()) {
             valid = false
-        } else {
-            _emailText!!.error = null
         }
-
         if (password.isEmpty() || password.length < 4 || password.length > 10) {
-            _passwordText!!.error = "between 4 and 10 alphanumeric characters"
             valid = false
-        } else {
-            _passwordText!!.error = null
         }
-
         return valid
     }
 
